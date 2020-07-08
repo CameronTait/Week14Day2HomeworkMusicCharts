@@ -30,7 +30,7 @@ class SongContainer extends React.Component {
     
     return (
       <div>
-        <h2>Song Container</h2>
+        <h2>Top Songs</h2>
         <SongSelector songs={this.state.songs} onSongSelected={this.handleSongSelected} />
         <SongDetail song={selectedSong} />
       </div>
