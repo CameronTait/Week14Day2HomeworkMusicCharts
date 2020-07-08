@@ -1,5 +1,5 @@
 import React from 'react';
-import SongSelector from '../components/SongSelector';
+import SongList from '../components/SongList';
 import SongDetail from '../components/SongDetail';
 
 class SongContainer extends React.Component {
@@ -31,7 +31,6 @@ class SongContainer extends React.Component {
     return (
       <div>
         <h2>Top Songs</h2>
-        <SongSelector songs={this.state.songs} onSongSelected={this.handleSongSelected} />
         <SongDetail song={selectedSong} />
       </div>
     );
